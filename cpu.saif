@@ -1,0 +1,208 @@
+(SAIFILE
+(SAIFVERSION "2.0")
+(DIRECTION "backward")
+(DESIGN )
+(DATE "Thu Oct 01 14:15:42 2026")
+(VENDOR "Synopsys, Inc.")
+(PROGRAM_NAME "fsdb2saif")
+(VERSION "Verdi_Y-2026.03-SP2")
+(DIVIDER / )
+(TIMESCALE 1 ps)
+(DURATION 195000)
+(INSTANCE testbench
+  (NET
+    (CLK
+      (T0 100000) (T1 95000) (TX 0)
+      (TC 38) (IG 0)
+    )
+    (RST
+      (T0 180000) (T1 15000) (TX 0)
+      (TC 1) (IG 0)
+    )
+    (START
+      (T0 185000) (T1 10000) (TX 0)
+      (TC 2) (IG 0)
+    )
+    (S_POS
+      (T0 185000) (T1 10000) (TX 0)
+      (TC 2) (IG 0)
+    )
+    (S_NIVEL
+      (T0 185000) (T1 10000) (TX 0)
+      (TC 2) (IG 0)
+    )
+    (S_SELL
+      (T0 185000) (T1 10000) (TX 0)
+      (TC 2) (IG 0)
+    )
+    (BANDA
+      (T0 165000) (T1 30000) (TX 0)
+      (TC 2) (IG 0)
+    )
+    (DONE
+      (T0 195000) (T1 0) (TX 0)
+      (TC 0) (IG 0)
+    )
+    (SELLADO
+      (T0 155000) (T1 40000) (TX 0)
+      (TC 2) (IG 0)
+    )
+    (VALVULA
+      (T0 95000) (T1 100000) (TX 0)
+      (TC 3) (IG 0)
+    )
+  )
+  (INSTANCE uut
+    (NET
+      (CLK
+        (T0 100000) (T1 95000) (TX 0)
+        (TC 38) (IG 0)
+      )
+      (RST
+        (T0 180000) (T1 15000) (TX 0)
+        (TC 1) (IG 0)
+      )
+      (START
+        (T0 185000) (T1 10000) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (S_POS
+        (T0 185000) (T1 10000) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (S_NIVEL
+        (T0 185000) (T1 10000) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (S_SELL
+        (T0 185000) (T1 10000) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (BANDA
+        (T0 165000) (T1 30000) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (DONE
+        (T0 195000) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+      (SELLADO
+        (T0 155000) (T1 40000) (TX 0)
+        (TC 2) (IG 0)
+      )
+      (VALVULA
+        (T0 95000) (T1 100000) (TX 0)
+        (TC 3) (IG 0)
+      )
+      (req_proc_net
+        (T0 55000) (T1 140000) (TX 0)
+        (TC 1) (IG 0)
+      )
+      (done_proc_net
+        (T0 195000) (T1 0) (TX 0)
+        (TC 0) (IG 0)
+      )
+    )
+    (INSTANCE u_moore
+      (NET
+        (clk
+          (T0 100000) (T1 95000) (TX 0)
+          (TC 38) (IG 0)
+        )
+        (rst
+          (T0 180000) (T1 15000) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (start
+          (T0 185000) (T1 10000) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (s_pos
+          (T0 185000) (T1 10000) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (done_proc
+          (T0 195000) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (rec_proc
+          (T0 55000) (T1 140000) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (banda
+          (T0 165000) (T1 30000) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (state\[1\]
+          (T0 55000) (T1 140000) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (state\[0\]
+          (T0 165000) (T1 30000) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (next_state\[1\]
+          (T0 55000) (T1 140000) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (next_state\[0\]
+          (T0 165000) (T1 30000) (TX 0)
+          (TC 2) (IG 0)
+        )
+      )
+    )
+    (INSTANCE u_mealy
+      (NET
+        (clk
+          (T0 100000) (T1 95000) (TX 0)
+          (TC 38) (IG 0)
+        )
+        (rst
+          (T0 180000) (T1 15000) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (req_proc
+          (T0 55000) (T1 140000) (TX 0)
+          (TC 1) (IG 0)
+        )
+        (s_nivel
+          (T0 185000) (T1 10000) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (s_sellado
+          (T0 185000) (T1 10000) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (sel
+          (T0 155000) (T1 40000) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (val_out
+          (T0 95000) (T1 100000) (TX 0)
+          (TC 3) (IG 0)
+        )
+        (done
+          (T0 195000) (T1 0) (TX 0)
+          (TC 0) (IG 0)
+        )
+        (state\[1\]
+          (T0 155000) (T1 40000) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (state\[0\]
+          (T0 115000) (T1 80000) (TX 0)
+          (TC 3) (IG 0)
+        )
+        (next_state\[1\]
+          (T0 155000) (T1 40000) (TX 0)
+          (TC 2) (IG 0)
+        )
+        (next_state\[0\]
+          (T0 95000) (T1 100000) (TX 0)
+          (TC 3) (IG 0)
+        )
+      )
+    )
+  )
+)
+)
